@@ -19,4 +19,4 @@ COPY --from=build /app/out .
 EXPOSE 8080
 
 # Comando para arrancar la API
-ENTRYPOINT ["dotnet", "service-portfolio.dll"]
+ENTRYPOINT ["dotnet", "ProjectsQueryAPI.dll"]
