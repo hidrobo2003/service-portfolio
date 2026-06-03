@@ -17,7 +17,7 @@ public class ProjectQueryRepository : IProjectQueryRepository
     public async Task<IEnumerable<Project>> GetAllByTypeEnAsync(string type)
     {
         const string sql = @"
-            SELECT id, problem, repository, description, module, deploy, type, language
+            SELECT id, title, problem, repository, description, module, deploy, type, language
             FROM projects
             WHERE language = 'english' AND type = @Type";
 
@@ -29,7 +29,7 @@ public class ProjectQueryRepository : IProjectQueryRepository
     public async Task<IEnumerable<Project>> GetAllByModuleEnAsync(int module)
     {
         const string sql = @"
-            SELECT id, problem, repository, description, module, deploy, type, language
+            SELECT id, title, problem, repository, description, module, deploy, type, language
             FROM projects
             WHERE language = 'english' AND type = 'riwi' AND module = @Module";
 
@@ -41,7 +41,7 @@ public class ProjectQueryRepository : IProjectQueryRepository
     public async Task<IEnumerable<Project>> GetAllByTypeSpAsync(string type)
     {
         const string sql = @"
-            SELECT id, problem, repository, description, module, deploy, type, language
+            SELECT id, title, problem, repository, description, module, deploy, type, language
             FROM projects
             WHERE language = 'español' AND type = @Type";
 
@@ -53,7 +53,7 @@ public class ProjectQueryRepository : IProjectQueryRepository
     public async Task<IEnumerable<Project>> GetAllByModuleSpAsync(int module)
     {
         const string sql = @"
-            SELECT id, problem, repository, description, module, deploy, type, language
+            SELECT id, title, problem, repository, description, module, deploy, type, language
             FROM projects
             WHERE language = 'español' AND type = 'riwi' AND module = @Module";
 

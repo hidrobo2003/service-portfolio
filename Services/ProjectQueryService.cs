@@ -40,6 +40,7 @@ public class ProjectQueryService : IProjectQueryService
     private static ProjectResponseDto MapToDto(Project p) => new()
     {
         Id = p.Id,
+        Title = p.Title,
         Problem = p.Problem,
         Repository = p.Repository,
         Description = p.Description,

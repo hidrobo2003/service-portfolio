@@ -14,9 +14,7 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("https://hidrobo2003.github.io/portfolio/",  // producción (sin cambios)
     "http://localhost:5500",           // Live Server
-    "http://127.0.0.1:5500",          // Live Server (alternativo)
-    "http://localhost:3000",           // por si usas otro puerto
-    "http://127.0.0.1:3000")
+    "http://127.0.0.1:5500")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
