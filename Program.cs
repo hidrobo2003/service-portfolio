@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowGitHubPages", policy =>
     {
-        policy.WithOrigins("https://hidrobo2003.github.io/portafolio/",  // producción (sin cambios)
+        policy.WithOrigins("https://hidrobo2003.github.io/portfolio/",  // producción (sin cambios)
     "http://localhost:5500",           // Live Server
     "http://127.0.0.1:5500",          // Live Server (alternativo)
     "http://localhost:3000",           // por si usas otro puerto
