@@ -12,7 +12,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowGitHubPages", policy =>
     {
-        policy.WithOrigins("https://hidrobo2003.github.io")
+        policy.WithOrigins("https://hidrobo2003.github.io","http://localhost:5500")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
